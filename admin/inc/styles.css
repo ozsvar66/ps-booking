@@ -1,0 +1,164 @@
+.psSetupDiv {
+	margin: 8px 0px 8px 14px;
+	width:750px;
+	border:1px solid silver;
+	border-radius:8px;
+	background-color:#f1f0e8;
+	padding:12px;
+}
+.psSpan {
+	width:150px;
+	display:inline-block;
+	text-align:right;
+	padding-right:10px;
+	vertical-align:top;
+	padding-top:5px;
+}
+.psTab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.psSetupDiv .form-table th {
+	width:140px;
+}
+.psCheckbox {
+	margin:8px 0px 0px 0px !important;
+}
+
+/* Style the buttons that are used to open the psTab content */
+.psTab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.psTab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current psTablink class */
+.psTab button.active {
+  background-color: #ccc;
+}
+
+/* Style the psTab content */
+.psTabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+table.requests { }
+table.requests .column-cb { width:5%; }
+table.requests .column-id { width:7%; }
+table.requests .column-name { width:22%; }
+table.requests .column-roomtype { width:22%; }
+table.requests .column-date_start { width:21%; }
+table.requests .column-date_created { width:19%; }
+table.requests .column-info { width:4%; }
+
+.ps-info {
+	display:none;
+	width:600px !important;
+	max-width:calc(100vw - 60px);
+	padding: 0px !important;
+}
+.ps-info > div {
+	display:flex;
+	flex-direction:row;
+	margin:0px 0px 2px 0px;
+	padding:0px;
+}
+.ps-info > div:nth-child(even) { background-color:#f0f1f5; }
+.ps-info > div:nth-child(odd) { background-color:#e7e8f5; }
+.ps-info > div > label, .ps-info > div > div {
+	display:inline-block;
+	vertical-align:top;
+	padding:6px 8px;
+}
+.ps-info > div > label {
+	width:calc(30% - 16px);
+}
+.ps-info > div > label:after {
+	content:":";
+}
+.ps-info > div:nth-child(even) > label { background-color:#e8e9ed; }
+.ps-info > div:nth-child(odd) > label { background-color:#e0e1ed; }
+.ps-info > div > div {
+	width:calc(70% - 16px);
+}
+.ps-calendar {
+	background:transparent url(/wp-content/plugins/ps-booking/admin/inc/calendar.png) no-repeat left center;
+	padding:2px 2px 2px 20px;
+	color:transparent !important;
+	height:20px;
+	width:0px;
+	border:0px !important;
+	cursor:pointer;
+	background-size:contain;
+	background-color: transparent !important;
+	margin-top:5px;
+}
+
+.psb-bordered {
+	border:1px dashed silver;
+	padding:12px 4px;
+	border-radius:8px;
+	margin:4px -4px -16px -4px;
+}
+.psb-bordered label {
+	padding: 4px 0px 0px 4px;
+}
+.psb-textarea {
+	width:calc(100% - 170px);
+	height:80px;
+}
+.psb-bordered2 {
+	margin: 10px 10px 10px 20px;
+}
+.psb-bordered2 .psSpan {
+	width: 100px;
+}
+.psb-bordered2 .psb-textarea {
+	width:calc(100% - 110px);
+}
+.psb-text {
+	width:calc(100% - 170px);
+}
+.psb-notes {
+	font-size: 0.9em;
+	padding: 10px;
+	background-color: #fff;
+	border-radius:8px;
+	margin-bottom:12px;
+}
+.psb-notes ul {
+	list-style: disc;
+	padding: 0px 0px 0px 20px;
+}
+.psb-notes ul li {
+	margin-bottom:3px;
+}
+.psb-notes-top {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin: -12px -4px 14px -4px;
+}
+.psb-notes-bottom {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	margin: 14px -4px -12px -4px;
+}
+.psb-notes span, .psb-bordered .notes-top span {
+	color:black;
+}
+.psempty {
+	display:none;
+} 
