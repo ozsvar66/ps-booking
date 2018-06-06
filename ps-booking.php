@@ -6,8 +6,8 @@
  * Version:     1.0
  * Author:      István Ozsvár
  * Author URI:  http://ozsvar.com/
- * License:     GPL2
- * License URI: hhttps://github.com/ozsvar66/ps-booking/blob/master/LICENSE
+ * License:     MIT
+ * License URI: https://github.com/ozsvar66/ps-booking/blob/master/LICENSE
  */
 
 
