@@ -1,33 +1,16 @@
 <?php
-/*
- * @link              http://www.ozsvar.com/_converts/ps-booking
- * @since             1.0
- * @package           PS_Booking
+/**
+ * Plugin Name: PS Booking
+ * Plugin URI:  https://github.com/ozsvar66/ps-booking
+ * Description: Booking engine for the small hotels
+ * Version:     1.0
+ * Author:      István Ozsvár
+ * Author URI:  http://ozsvar.com/
+ * License:     GPL2
+ * License URI: hhttps://github.com/ozsvar66/ps-booking/blob/master/LICENSE
+ */
 
-@ps-booking
-Plugin Name: PS Booking
-Plugin URI:  http://www.ozsvar.com/_converts/ps-booking/README.md
-Description: Booking engine for the small hotels
-Version:     1.0
-Author:      István Ozsvár
-Author URI:  http://ozsvar.com/
-License:     GPL2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Copyright 2018 István Ozsvár (email : istvan@ozsvar.com)
-(PS Booking) is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-any later version.
- 
-(PS Booking) is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
- 
-You should have received a copy of the GNU General Public License
-along with (PS Booking). If not, see (http://link to your plugin license).
-*/
 	require_once __DIR__."/admin/functions.php";
 
 	define("PSBOOKING_PRESPAN",    '<span class="psSpan">');
