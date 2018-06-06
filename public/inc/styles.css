@@ -1,0 +1,158 @@
+.psb-publicform {
+}
+.psb-form-row {
+}
+.psb-form-label {
+}
+.psb-obly {
+	position:relative;
+}
+.psb-obly::after {
+	position:absolute;
+	content:"*";
+}
+.psb-form-value {
+}
+#psb-check-dates {
+	border: 1px solid silver;
+	padding: 10px 20px;
+	border-radius: 8px;
+}
+.psb-roominputs, .psb-roomdetails {
+	display:inline-block;
+	vertical-align:top;
+	padding:0px 10px 0px 0px;
+	width:calc(50% - 11px);
+}
+.psb-roomdetails {
+	padding:0px 0px 0px 10px;
+	border-left:1px dashed silver;
+}
+.psb-roomtitle {
+	font-weight:bold;
+	margin:0px 0px 16px 0px;
+}
+.psb-roomdescript {
+	margin:0px;
+}
+.psb-pricedescript {
+	margin: 20px 0px 0px 20px;
+	border: 1px dashed #d0d0d0;
+	padding: 10px 18px;
+	border-radius: 8px;
+}
+.psb-pricedescript-title {
+	font-weight: bold;
+	color: silver;
+	margin: -10px -18px 4px -18px;
+	background-color: #f6f6f6;
+	padding: 4px 8px;
+}
+.psb-numof {
+	width:80px;
+}
+.psb-age {
+	display:inline-block;
+}
+.psb-input-error {
+	background-color: #ffcccc;
+	color: #000;
+}
+
+/* -- calendar: BEG */
+.psb-calendar {
+	background:transparent url(/wp-content/plugins/ps-booking/public/inc/calendar.png) no-repeat left center;
+	padding:2px 2px 2px 20px;
+	color:transparent !important;
+	height:20px;
+	width:0px;
+	border:0px !important;
+	cursor:pointer;
+	background-size:contain;
+	background-color: transparent !important;
+	margin-top:5px;
+}
+.psb-publicform .psb-calendar {
+	background-position: center right;
+	width: 14em !important;
+	color: unset !important;
+	border: 1px solid silver !important;
+	padding: 4px 8px;
+	background-size: 18px;
+	background-position-x: calc(100% - 4px) !important;
+}
+.psb-disabled-day > span {
+	background-color: #FA6900 !important;
+  background-image: none !important;
+  position: relative;
+}
+.psb-disabled-day > span::before, .psb-disabled-day > span::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border-bottom: 1px solid black;
+}
+.psb-disabled-day > span::before {
+  -webkit-transform: skewY(-45deg);
+  transform: skewY(-45deg);
+}
+.psb-disabled-day > span::after {
+  -webkit-transform: skewY(45deg);
+  transform: skewY(45deg);
+}
+
+.psb-datepicker .ui-state-active,
+.psb-datepicker .ui-widget-content .ui-state-active,
+.psb-datepicker .ui-widget-header .ui-state-active,
+.psb-datepicker a.ui-button:active,
+.psb-datepicker .ui-button:active, .ui-button.ui-state-active:hover,
+.psb-start-day > span, .psb-interday > a, .psb-interday > a:hover {
+	background:yellow none !important;
+	color:black !important;
+}
+.psb-start-day {
+	opacity:1 !important;
+}
+.psb-start-day-first > span, .psb-day-last > a {
+	position:relative;
+}
+.psb-start-day-first > span:after {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 0px;
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-left: 8px solid orange;
+}
+.psb-day-last > a:after {
+	content: '';
+	position: absolute;
+	top: 6px;
+	right: 0px;
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-right: 8px solid orange;
+}
+.psb-datepicker .ui-datepicker td span, .psb-datepicker .ui-datepicker td a {
+	text-align:center;
+}
+.psb-calendar-title {
+	padding-left: 0.6em !important;
+	padding-right: 0.6em !important;
+	line-height: 1.3em;
+	font-size: 0.9em;
+}
+.psb-calendar-title .psb-cal-room {
+	font-weight:bold;
+}
+.psb-calendar-title .psb-cal-nights {
+	font-weight:normal;
+}
+/* -- calendar: END */
