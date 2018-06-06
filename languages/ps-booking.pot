@@ -1,0 +1,325 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PS Booking\n"
+"POT-Creation-Date: 2018-05-11 22:33+0200\n"
+"PO-Revision-Date: 2018-05-03 15:21+0200\n"
+"Last-Translator: \n"
+"Language-Team: Ozsvár István istvanVozsvar.com\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "DateCreated"
+msgstr "Creation time"
+
+msgid "psBooking Settings"
+msgstr ""
+
+msgid "SHORTCODE-DESC"
+msgstr "PS Booking allows you to handle a completly booking engine. When you’re editing a page or post, directly insert the shortcode in your text and a booking form will be appears there. The basic usage would be something like this:"
+
+msgid "Ord. index"
+msgstr ""
+
+msgid "Requests"
+msgstr ""
+
+msgid "Accommodation setup"
+msgstr ""
+
+msgid "Unit setup"
+msgstr ""
+
+msgid "Name [object]"
+msgstr "Name"
+
+msgid "Name [person]"
+msgstr "Name"
+
+msgid "Num. of room types"
+msgstr ""
+
+msgid "XXX. roomtype"
+msgstr ""
+
+msgid "Form setup"
+msgstr ""
+
+msgid "After-Email setup"
+msgstr ""
+
+msgid "Form is active"
+msgstr ""
+
+msgid "Email after request"
+msgstr ""
+
+msgid "Email header"
+msgstr ""
+
+msgid "Email body"
+msgstr "Content"
+
+msgid "Lead-In Text"
+msgstr ""
+
+msgid "Footer"
+msgstr ""
+
+msgid "Create new unit"
+msgstr ""
+
+msgid "New unit"
+msgstr ""
+
+msgid "Name of unit"
+msgstr ""
+
+msgid "Unit capacity"
+msgstr ""
+
+msgid "Short descript"
+msgstr ""
+
+msgid "Price descript"
+msgstr ""
+
+msgid "Web page (url)"
+msgstr ""
+
+msgid "E-mail Subject"
+msgstr ""
+
+msgid "Sender's E-mail"
+msgstr ""
+
+msgid "Address part"
+msgstr ""
+
+msgid "Name part"
+msgstr ""
+
+msgid "Shortcode"
+msgstr ""
+
+msgid "REQUEST_SETUP"
+msgstr "You can watch the requests in the left side menubar, under the menu option <a href=\"/wp-admin/admin.php?page=ps-booking2\">Requests</a>."
+
+msgid "adults"
+msgstr ""
+
+msgid "in all"
+msgstr ""
+
+msgid "Roomtype"
+msgstr ""
+
+msgid "piece(s)"
+msgstr ""
+
+msgid "nights"
+msgstr ""
+
+msgid "night(s)"
+msgstr ""
+
+msgid "Enabled num. of nights to book"
+msgstr ""
+
+msgid "head(s)"
+msgstr ""
+
+msgid "head(s)2"
+msgstr "head(s) (adults and children combined)"
+
+msgid "Reg. date"
+msgstr ""
+
+msgid "Requester"
+msgstr ""
+
+msgid "Check-in"
+msgstr ""
+
+msgid "Check-out"
+msgstr ""
+
+msgid "Detailed information about the Request"
+msgstr ""
+
+msgid "Optional fields"
+msgstr ""
+
+msgid "Num. of children"
+msgstr ""
+
+msgid "Num. of adults"
+msgstr ""
+
+msgid "children"
+msgstr ""
+
+msgid "Ages of children"
+msgstr ""
+
+msgid "Max. age of child"
+msgstr ""
+
+msgid "years"
+msgstr ""
+
+msgid "Other comments"
+msgstr ""
+
+msgid "Your Email address"
+msgstr ""
+
+msgid "Your full name"
+msgstr ""
+
+msgid "Accommodation units"
+msgstr ""
+
+msgid "Accommodation unit"
+msgstr ""
+
+msgid "Accommodation units descript"
+msgstr "Rooms, apartments, apartment houses, tent places, bungalows, etc ..."
+
+msgid "Availability"
+msgstr ""
+
+msgid "Min. nights"
+msgstr ""
+
+msgid "Max. nights"
+msgstr ""
+
+msgid "MONTH-1"
+msgstr "January"
+
+msgid "MONTH-2"
+msgstr "February"
+
+msgid "MONTH-3"
+msgstr "March"
+
+msgid "MONTH-4"
+msgstr "April"
+
+msgid "MONTH-5"
+msgstr "May"
+
+msgid "MONTH-6"
+msgstr "June"
+
+msgid "MONTH-7"
+msgstr "July"
+
+msgid "MONTH-8"
+msgstr "August"
+
+msgid "MONTH-9"
+msgstr "September"
+
+msgid "MONTH-10"
+msgstr "October"
+
+msgid "MONTH-11"
+msgstr "November"
+
+msgid "MONTH-12"
+msgstr "December"
+
+msgid "DAY-0"
+msgstr "Sunday"
+
+msgid "DAY-1"
+msgstr "Monday"
+
+msgid "DAY-2"
+msgstr "Tuesday"
+
+msgid "DAY-3"
+msgstr "Wednesday"
+
+msgid "DAY-4"
+msgstr "Thursday"
+
+msgid "DAY-5"
+msgstr "Friday"
+
+msgid "DAY-6"
+msgstr "Saturday"
+
+msgid "DATE-FORMAT"
+msgstr "DD, d M yy"
+
+msgid "IN-en_EN"
+msgstr "in English"
+
+msgid "IN-de_DE"
+msgstr "in German"
+
+msgid "IN-hu_HU"
+msgstr "in Hungarian"
+
+msgid "IN-it_IT"
+msgstr "in Italian"
+
+msgid "IN-nl_NL"
+msgstr "in Dutch"
+
+msgid "Agree to checkboxes"
+msgstr "Agree to... checkboxes"
+
+msgid "Agree1"
+msgstr "Privacy Policy"
+
+msgid "Agree2"
+msgstr "Terms and Conditions"
+
+msgid "Agree3"
+msgstr "EULA agreements"
+
+msgid "Agree4"
+msgstr "Cookies Policy"
+
+msgid "Agree5"
+msgstr "Return and Refund Policies"
+
+msgid "YES"
+msgstr "Yes"
+
+msgid "Insertable Variables"
+msgstr "<h3>Insertable Variables</h3>The following variables can be added to the subject, to the lead text and to the footer of the letter:<ul><li><span>##VISITOREMAIL##</span> - visitor's email address,</li><li><span>##VISITORNAME##</span> - visitor's name,</li><li><span>##ORDERNUMBER##</span> - order number of the request,</li><li><span>##ORDERNUMBER1000##</span> - order number of the request plus 1000,</li><li><span>##UNITNAME##</span> - the name of the selected unit</li><li><span>##DATE##</span> - the moment (date) of the request</li></ul>"
+
+msgid "Email body descript"
+msgstr "The values given in the call request will automatically add to the contents of the letter immediately after the lead text."
+
+msgid "Selected unit"
+msgstr ""
+
+msgid "After submit"
+msgstr ""
+
+msgid "Link of the Thankyou page"
+msgstr "Link of the \"Thankyou page\""
+
+msgid "If no Thankyou page"
+msgstr "If you leave it blank, after submit the page with the form will be re-loaded."
+
+msgid "Please fill in the fields below."
+msgstr ""
+
+msgid "Text on Submit button"
+msgstr ""
+
+msgid "Submit text can be"
+msgstr "Examples for the text on <i>submit</i> button: \"Submit\", \"Continue\", \"Send\",... etc."
