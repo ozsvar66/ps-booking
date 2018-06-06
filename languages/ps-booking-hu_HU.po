@@ -1,0 +1,323 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PS Booking\n"
+"POT-Creation-Date: 2018-05-03 15:21+0200\n"
+"PO-Revision-Date: 2018-06-06 16:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: Ozsvár István istavn@ozsvar.com\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "DateCreated"
+msgstr "Létrehozás pillanata"
+
+msgid "psBooking Settings"
+msgstr "psBooking beállítások"
+
+msgid "SHORTCODE-DESC"
+msgstr "A <i>shortcode</i>, azaz beillesztési kód nem tartalmaz semmilyen opciót, csak magát a parancsszót. Illeszd a szövegbe, ahová akarod, s a helyén megjelenik az ajánlatkérő űrlap. A kód formája az alábbi:"
+
+msgid "Ord. index"
+msgstr "Sorszám"
+
+msgid "Requests"
+msgstr "Ajánlatkérések"
+
+msgid "Accommodation setup"
+msgstr "Szálláshely beállításai"
+
+msgid "Unit setup"
+msgstr "Egység beállításai"
+
+msgid "Name [object]"
+msgstr "Elnevezés"
+
+msgid "Name [person]"
+msgstr "Név"
+
+msgid "Num. of room types"
+msgstr "Szobatípusok száma"
+
+msgid "XXX. roomtype"
+msgstr "XXX. szobatípus"
+
+msgid "Form setup"
+msgstr "Űrlap beállítása"
+
+msgid "After-Email setup"
+msgstr "Jelentés E-mail"
+
+msgid "Form is active"
+msgstr "Űrlap aktív"
+
+msgid "Email after request"
+msgstr "Befejezés utáni levélküldés"
+
+msgid "Email header"
+msgstr "Fejléc"
+
+msgid "Email body"
+msgstr "Tartalom"
+
+msgid "Lead-In Text"
+msgstr "Bevezető szöveg"
+
+msgid "Footer"
+msgstr "Lábléc"
+
+msgid "Create new unit"
+msgstr "Új szálláshely egység létrehozása"
+
+msgid "New unit"
+msgstr "Új egység"
+
+msgid "Name of unit"
+msgstr "Egység neve"
+
+msgid "Unit capacity"
+msgstr "Férőhelyek"
+
+msgid "Short descript"
+msgstr "Rövid leírás"
+
+msgid "Price descript"
+msgstr "Az árak leírása"
+
+msgid "Web page (url)"
+msgstr "Web-oldal (url)"
+
+msgid "E-mail Subject"
+msgstr "A levél tárgya"
+
+msgid "Sender's E-mail"
+msgstr "A küldő címe"
+
+msgid "Address part"
+msgstr "Cím rész"
+
+msgid "Name part"
+msgstr "Név rész"
+
+msgid "Shortcode"
+msgstr "Beillesztési kód"
+
+msgid "REQUEST_SETUP"
+msgstr "A beérkezett ajánlatkérések a bal oldali menüsozlopban található <a href=\"/wp-admin/admin.php?page=ps-booking2\">Ajánlatkérések</a> c. menü alatt tekinthetőek meg."
+
+msgid "adults"
+msgstr "felnőtt"
+
+msgid "in all"
+msgstr "összesen"
+
+msgid "Roomtype"
+msgstr "Szobatípus"
+
+msgid "piece(s)"
+msgstr "darab"
+
+msgid "nights"
+msgstr "éjszakák"
+
+msgid "night(s)"
+msgstr "éjszaka"
+
+msgid "Enabled num. of nights to book"
+msgstr "Foglalható éjszakák száma"
+
+msgid "head(s)"
+msgstr "fő"
+
+msgid "head(s)2"
+msgstr "fő (felnőtt és gyermek összesen)"
+
+msgid "Reg. date"
+msgstr "Reg. dátum"
+
+msgid "Requester"
+msgstr "Érdeklődő"
+
+msgid "Check-in"
+msgstr "Érkezés"
+
+msgid "Check-out"
+msgstr "Távozás"
+
+msgid "Detailed information about the Request"
+msgstr "Részletes információk az ajánlatkérésről"
+
+msgid "Optional fields"
+msgstr "Plusz mezők"
+
+msgid "Num. of children"
+msgstr "Gyermekek száma"
+
+msgid "Num. of adults"
+msgstr "Felnőttek száma"
+
+msgid "children"
+msgstr "gyermek"
+
+msgid "Ages of children"
+msgstr "Gyermekek életkorai"
+
+msgid "Max. age of child"
+msgstr "A gyermeki évek határa"
+
+msgid "years"
+msgstr "év"
+
+msgid "Other comments"
+msgstr "Egyéb megjegyzések"
+
+msgid "Your Email address"
+msgstr "Az Ön E-mail címe"
+
+msgid "Your full name"
+msgstr "Az Ön teljes neve"
+
+msgid "Accommodation units"
+msgstr "Szálláshely egységek"
+
+msgid "Accommodation units descript"
+msgstr "Szobák, apartmanok, apartmanházak, sátorhelyek, bungalók, stb..."
+
+msgid "Accommodation unit"
+msgstr "Szálláshely egység"
+
+msgid "Availability"
+msgstr "Foglaltsága"
+
+msgid "Min. nights"
+msgstr "Min. éjszaka"
+
+msgid "Max. nights"
+msgstr "Max. éjszaka"
+
+msgid "MONTH-1"
+msgstr "január"
+
+msgid "MONTH-2"
+msgstr "február"
+
+msgid "MONTH-3"
+msgstr "március"
+
+msgid "MONTH-4"
+msgstr "április"
+
+msgid "MONTH-5"
+msgstr "május"
+
+msgid "MONTH-6"
+msgstr "június"
+
+msgid "MONTH-7"
+msgstr "július"
+
+msgid "MONTH-8"
+msgstr "augusztus"
+
+msgid "MONTH-9"
+msgstr "szeptember"
+
+msgid "MONTH-10"
+msgstr "október"
+
+msgid "MONTH-11"
+msgstr "november"
+
+msgid "MONTH-12"
+msgstr "december"
+
+msgid "DAY-0"
+msgstr "vasárnap"
+
+msgid "DAY-1"
+msgstr "hétfő"
+
+msgid "DAY-2"
+msgstr "kedd"
+
+msgid "DAY-3"
+msgstr "szerda"
+
+msgid "DAY-4"
+msgstr "csütörtök"
+
+msgid "DAY-5"
+msgstr "péntek"
+
+msgid "DAY-6"
+msgstr "vasárnap"
+
+msgid "DATE-FORMAT"
+msgstr "yy. M. d. (DD)"
+
+msgid "IN-en_EN"
+msgstr "Angolul"
+
+msgid "IN-de_DE"
+msgstr "Németül"
+
+msgid "IN-hu_HU"
+msgstr "Magyarul"
+
+msgid "IN-it_IT"
+msgstr "Olaszul"
+
+msgid "IN-nl_NL"
+msgstr "Hollandul"
+
+msgid "Agree to checkboxes"
+msgstr "Beleegyezési mezők"
+
+msgid "Agree1"
+msgstr "Adatvédelmi irányelvek"
+
+msgid "Agree2"
+msgstr "Felhasználási feltételek"
+
+msgid "Agree3"
+msgstr "EULA megállapodások"
+
+msgid "Agree4"
+msgstr "Cookie-k házirendje"
+
+msgid "Agree5"
+msgstr "Visszatérítési irányelvek"
+
+msgid "YES"
+msgstr "Igen"
+
+msgid "Insertable Variables"
+msgstr "<h3>Beilleszthető változók</h3>A levél tárgyába, a bevezető szövegébe és a láblécébe az alábbi változók illeszthetőek be: <ul><li><span>##VISITOREMAIL##</span> - a látogató email címe,</li><li><span>##VISITORNAME##</span> - a látogató neve,</li><li><span>##ORDERNUMBER##</span> - az ajánlatkérés sorszáma,</li><li><span>##ORDERNUMBER1000##</span> - az ajánlatkérés sorszáma - növelve ezerrel,</li><li><span>##UNITNAME##</span> - a választott egység elnevezése</li><li><span>##DATE##</span> - az ajánlatkérés pillanata (dátuma)</li></ul>"
+
+msgid "Email body descript"
+msgstr "Az ajánlatkérés során megadott értékek automatikusan bekerülnek a levél tartalmába, közvetlenül a bevezető szöveg után."
+
+msgid "Selected unit"
+msgstr "Választott egység"
+
+msgid "After submit"
+msgstr "Küldés után"
+
+msgid "Link of the Thankyou page"
+msgstr "A \"Köszönő oldal\" linkje"
+
+msgid "If no Thankyou page"
+msgstr "Ha üresen hagyod, akkor küldés (submit) után az űrlapot tartalmazó oldal fog újratöltődni."
+
+msgid "Please fill in the fields below."
+msgstr "Kérjük, töltse ki az alábbi mezőket!"
+
+msgid "Text on Submit button"
+msgstr "Szöveg a \"submit\" gombon"
+
+msgid "Submit text can be"
+msgstr "Példák a <i>submit</i> gomb szövegére: \"Küldés\", \"Tovább\", \"Mentés\",... stb."
