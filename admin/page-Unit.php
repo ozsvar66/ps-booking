@@ -1,11 +1,13 @@
 <?php
-	
+
 	if(isset($_GET["tab"]) && $_GET["tab"]) $active_tab = $_GET["tab"];
 	else {
 		register_setting('psBooking_OptionGroup_Unit', 'psBooking_settingsUnit');
 		$options = get_option('psBooking_settingsUnit');
 		if(isset($options["psBooking_psTab"]) && $options["psBooking_psTab"]) $active_tab = $options["psBooking_psTab"];
 	}
+	
+	add_action('admin_enqueue_scripts', 'psBooking_imageUploader_installer');
 	
 //--------------------------------------------------------------------------------------------------
 	function psBookingInit_settingsUnit() {
@@ -31,6 +33,7 @@
 		psBooking_addFieldMultilang("unitintro", __('Short descript', 'ps-booking'), "Unit");
 		psBooking_addFieldMultilang("unitprice", __('Price descript', 'ps-booking'), "Unit");
 		psBooking_addFieldMultilang("unitlink", __('Web page (url)', 'ps-booking'), "Unit");
+		psBooking_addField("unitimg", __('Picture', 'ps-booking').'  <span style="font-weight:normal !important;">('.PSBOOKING_UNITIMG_WIDTH.'x'.PSBOOKING_UNITIMG_HEIGHT.')</span>', "Unit");
 		
 		$options = get_option( 'psBooking_settingsUnit' );
 		
@@ -292,5 +295,38 @@
 		
 	}
 //--------------------------------------------------------------------------------------------------
+	function psBooking_unitimg_render() {
+		
+		$name = "unitimg";
+    
+    $options = get_option('psBooking_settingsUnit');
+    $default_image = plugins_url('../imgs/noimage.png', __FILE__);
 
+		if(!empty( $options[$name])) {
+			$image_attributes = wp_get_attachment_image_src($options[$name], array(PSBOOKING_UNITIMG_WIDTH, PSBOOKING_UNITIMG_HEIGHT));
+			$src = $image_attributes[0];
+			$value = $options[$name];
+		}
+		else {
+			$src = $default_image;
+			$value = '';
+		}
+		
+		echo '<script>
+var psbTxtIfRemove = "'.__('Are you sure to remove it?','ps-booking').'";
+var psbTxtYES = "'.__('YES','ps-booking').'";
+var psbTxtNOT = "'.__('NOT','ps-booking').'";
+</script>
+<div class="psb-bordered psb-upload">
+	<img data-src="'.$default_image.'" src="'.$src.'" width="'.PSBOOKING_UNITIMG_WIDTH.'px" height="'.PSBOOKING_UNITIMG_HEIGHT.'px" />
+	<div>
+		<input type="hidden" name="psBooking_settingsUnit['.$name.']" id="psBooking_settingsUnit['.$name.']" value="'.$value.'" />
+		<button type="submit" class="psb-file-upload button">'.__('Upload', 'ps-booking').'</button>
+		<button type="submit" class="psb-file-remove button">&times;</button>
+	</div>
+</div>';
+	}
+//--------------------------------------------------------------------------------------------------
+	function psBooking_imageUploader_installer() { wp_enqueue_media(); }
+//--------------------------------------------------------------------------------------------------
 ?>
