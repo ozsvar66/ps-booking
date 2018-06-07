@@ -341,3 +341,12 @@ msgstr ""
 
 msgid "Are you sure to remove it?"
 msgstr ""
+
+msgid "LOGODIM"
+msgstr "Dimensions of the thumbnails"
+
+msgid "WIDTH"
+msgstr "width"
+
+msgid "HEIGHT"
+msgstr "height"
