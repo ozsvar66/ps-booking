@@ -33,10 +33,7 @@
 			$langindex = psBooking_getLangindex();
 			
 			if(isset($options["Form"]["thankyoupage_".$langindex]) && $options["Form"]["thankyoupage_".$langindex]) {
-//echo "redirect: ".get_site_url().$options["Form"]["thankyoupage_".$langindex];
-//echo "f exists: ".(function_exists("wp_redirect") ? "true" : "false")."<br>\n";
 				psBooking_redirect(get_site_url().$options["Form"]["thankyoupage_".$langindex]);
-				//exit;
 			}
 			
 		}
@@ -147,7 +144,11 @@ var psDateFormat = "'.__('DATE-FORMAT', 'ps-booking').'";
 		
 		if(function_exists($_sf=__FUNCTION__."_MODIFIED")) { eval("\$_ret=".$_sf."(\$options);"); if($_ret) return $_ret; }
 		
-		return '<input class="psb-submit" type="submit" value="'.$options["Form"]["submittext_".psBooking_getLangindex()].'" ></form>';
+		$langindex = psBooking_getLangindex();
+		
+		$text = isset($options["Form"]["submittext_".$langindex]) && $options["Form"]["submittext_".$langindex] ? $options["Form"]["submittext_".$langindex] : "";
+		
+		return '<input class="psb-submit" type="submit" value="'.$text.'" ></form>';
 	}
 //--------------------------------------------------------------------------------------------------
 	function psBooking_form_getInputEmail($options) {
@@ -222,8 +223,17 @@ var psDateFormat = "'.__('DATE-FORMAT', 'ps-booking').'";
 		foreach($units as $row) {
 			$unit = isset($row->structuredinfo) ? unserialize($row->structuredinfo) : array();
 			$i = $row->id;
+			if(isset($unit["link"][$langindex]) && $unit["link"][$langindex]) {
+				$a = '<a href="'.$unit["link"][$langindex].'" title="'.$unit["name"][$langindex].'">';
+				$b = '</a>';
+			}
+			else $a = $b = '';
 			$inputs .= '<div id="psb-roomdetail-'.$i.'" class="psb-roomdetail">';
-			$inputs .= '<div class="psb-roomtitle">'.$unit["name"][$langindex].'</div>';
+			if(isset($unit["thumb"]) && $unit["thumb"]) {
+				$image_attributes = wp_get_attachment_image_src($unit["thumb"], array(PSBOOKING_UNITIMG_WIDTH, PSBOOKING_UNITIMG_HEIGHT));
+				$inputs .= '<div class="psb-roomthumb">'.$a.'<img src="'.$image_attributes[0].'" width="'.PSBOOKING_UNITIMG_WIDTH.'px" height="'.PSBOOKING_UNITIMG_HEIGHT.'px" />'.$b.'</div>';
+			}
+			$inputs .= '<div class="psb-roomtitle">'.$a.$unit["name"][$langindex].$b.'</div>';
 			$inputs .= '<div class="psb-roomdescript">'.$unit["intro"][$langindex].'</div>';
 			$inputs .= '<div class="psb-pricedescript"><div class="psb-pricedescript-title">'.__('Price descript','ps-booking').'</div>'.$unit["price"][$langindex].'</div>';
 			$inputs .= '</div>';
@@ -272,7 +282,7 @@ var psDateFormat = "'.__('DATE-FORMAT', 'ps-booking').'";
 		if(function_exists($_sf=__FUNCTION__."_MODIFIED")) { eval("\$_ret=".$_sf."(\$units);"); if($_ret) return $_ret; }
 		
 		$input = '<select name="psb_adults" id="psb_adults" class="psb-numof"></select>';
-		$inputs .= psBooking_getInput("", "", "Num. of adults", false, $input);
+		$inputs = psBooking_getInput("", "", "Num. of adults", false, $input);
 		
 		$inputs .= '<script> var psBooking_byRoomMax_adults = []; ';
 		foreach($units as $row) {
