@@ -19,6 +19,12 @@
 	define("PSBOOKING_EMPTYLABEL", '<label class="psempty psempty-more">x</label>');
 	define("PSBOOKING_MAX_AGREES", 5);
 	
+	$options = get_option('psBooking_settingsAccomm');
+	$_width = isset($options["psBooking_logodimx"]) ? $options["psBooking_logodimx"] : 140;
+	$_height = isset($options["psBooking_logodimy"]) ? $options["psBooking_logodimy"] : 140;
+	define("PSBOOKING_UNITIMG_WIDTH", $_width);
+	define("PSBOOKING_UNITIMG_HEIGHT", $_height);
+	
 	$psBooking_languages = get_available_languages();
 	
 	// Initialize the plugin and add the menu
