@@ -21,6 +21,8 @@
 		
 		psBooking_addField("hotel", "Name [object]", "Accomm");
 		psBooking_addField("maxchildage", "Max. age of child", "Accomm");
+		psBooking_addField("logodimx", "LOGODIM", "Accomm");
+		psBooking_addField("logodimy", PSBOOKING_SMALLFIELD, "Accomm");
 		
 		psBooking_addField("psTab", PSBOOKING_SMALLFIELD, "Accomm");
 	}
@@ -41,4 +43,26 @@
 		echo '</select> '.__('years','ps-booking');
 	}
 //--------------------------------------------------------------------------------------------------
+	function psBooking_logodimx_render() {
+		$options = get_option('psBooking_settingsAccomm');
+		$width = isset($options["psBooking_logodimx"]) ? $options["psBooking_logodimx"] : 140;
+		$height = isset($options["psBooking_logodimy"]) ? $options["psBooking_logodimy"] : 140;
+		echo ''
+			.__('WIDTH','ps-booking')
+			.': <input name="psBooking_settingsAccomm[psBooking_logodimx]" value="'.$width.'" type="text" style="width:50px; text-align:right;" />'
+			.'px'
+			.'&nbsp; &nbsp; &nbsp; '
+			.__('HEIGHT','ps-booking')
+			.': <input name="psBooking_settingsAccomm[psBooking_logodimy]" value="'.$height.'" type="text" style="width:50px; text-align:right;" />'
+			.'px';
+	}
+//--------------------------------------------------------------------------------------------------
+	function psBooking_logodimy_render() { echo PSBOOKING_EMPTYLABEL; }
+//--------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 ?>

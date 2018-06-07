@@ -58,6 +58,7 @@
 				"intro"			=> $intro,
 				"price"			=> $price,
 				"link"			=> $link,
+				"thumb"			=> isset($options["psBooking_unitimg"]) ? $options["psBooking_unitimg"] : "",
 			));
 			
 			$psBooking_currentUnit = null;
@@ -97,13 +98,14 @@
 				"ord_index"	=> psBooking_getNextOrdIndexForAccommUnit(),
 				"name"			=> $empty,
 				"adults"		=> 2,
-				"children"	=> 0,
+				//"children"	=> 0,
 				"nightsmin"	=> 1,
 				"nightsmax"	=> 14,
 				"calendar"	=> "",
 				"intro"			=> $empty,
 				"price"			=> $empty,
 				"link"			=> $empty,
+				"thumb"			=> "",
 			);
 		}
 		
@@ -296,16 +298,20 @@
 	}
 //--------------------------------------------------------------------------------------------------
 	function psBooking_unitimg_render() {
-		
-		$name = "unitimg";
+	global $psBooking_currentUnit;
+	
+		$name = "psBooking_unitimg";
     
     $options = get_option('psBooking_settingsUnit');
     $default_image = plugins_url('../imgs/noimage.png', __FILE__);
+    
+    if($psBooking_currentUnit!=null) $image = isset($psBooking_currentUnit['thumb']) && $psBooking_currentUnit['thumb'] ? $psBooking_currentUnit['thumb'] : "";
+		else $image = isset($options["psBooking_unitimg"]) ? $options["psBooking_unitimg"] : "";
 
-		if(!empty( $options[$name])) {
-			$image_attributes = wp_get_attachment_image_src($options[$name], array(PSBOOKING_UNITIMG_WIDTH, PSBOOKING_UNITIMG_HEIGHT));
+		if(!empty($image)) {
+			$image_attributes = wp_get_attachment_image_src($image, array(PSBOOKING_UNITIMG_WIDTH, PSBOOKING_UNITIMG_HEIGHT));
 			$src = $image_attributes[0];
-			$value = $options[$name];
+			$value = $image;
 		}
 		else {
 			$src = $default_image;
