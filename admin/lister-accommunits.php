@@ -38,8 +38,7 @@
 				"name"					=> __("Name of unit", 'ps-booking'),
 				"min_nights"		=> __("Min. nights", 'ps-booking'),
 				"max_nights"		=> __("Max. nights", 'ps-booking'),
-				"adults"				=> __("Unit capacity", 'ps-booking')." - ".__("adults", 'ps-booking'),
-				"children"			=> __("Unit capacity", 'ps-booking')." - ".__("children", 'ps-booking'),
+				"adults"				=> '<span title="'.__("Unit capacity all - desc", 'ps-booking').'">'.__("Unit capacity all", 'ps-booking').'</span>',
 				"date_created"	=> __("DateCreated", 'ps-booking'),
 			);
 			return $columns;
@@ -97,7 +96,6 @@
 					'min_nights'		=> $unit["nightsmin"],
 					'max_nights'		=> $unit["nightsmax"],
 					'adults'				=> $unit["adults"],
-					'children'			=> $unit["children"],
 					'date_created'	=> isset($row->date_created) ? "'".date("y/M/j H:i", strtotime($row->date_created)) : "",
 				);
 			}
