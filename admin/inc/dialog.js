@@ -193,8 +193,8 @@ function Dialog_YesNo(sConfirmText, sTextYes, sTextNo, sFuncYes, sFuncNot) {
 		+ '  <div class="daccd-text">' + sConfirmText + '</div>'
 		+ '</div>'
 		+ '<div class="daccd-buttons">'
-		+ '  <div class="daccd-yes"><input id="' + idYes + '" type="button" class="submit" value="' + sTextYes + '" id="ifdelYes" onclick="" /></div>'
-		+ '  <div class="daccd-not"><input id="' + idNot + '" type="button" class="button" value="' + sTextNo + '" onclick="if(typeof(Dialog_Close)==\'function\') { Dialog_Close(\'dialogAutoCreatedConfirmDiv\'); } else { var o = typeof(opener)!=\'undefined\' ? opener : parent; if(typeof(o)!=\'undefined\' && typeof(o.Dialog_Close)!=\'undefined\') o.Dialog_Close(\'dialogAutoCreatedConfirmDiv\'); }" /></div>'
+		+ '  <div class="daccd-yes"><input id="' + idYes + '" type="button" class="button-primary submit" value="' + sTextYes + '" id="ifdelYes" onclick="" /></div>'
+		+ '  <div class="daccd-not"><input id="' + idNot + '" type="button" class="button-secondary button" value="' + sTextNo + '" onclick="if(typeof(Dialog_Close)==\'function\') { Dialog_Close(\'dialogAutoCreatedConfirmDiv\'); } else { var o = typeof(opener)!=\'undefined\' ? opener : parent; if(typeof(o)!=\'undefined\' && typeof(o.Dialog_Close)!=\'undefined\') o.Dialog_Close(\'dialogAutoCreatedConfirmDiv\'); }" /></div>'
 		+ '</div>';
 	$("body").append('<div id="dialogAutoCreatedConfirmDiv"></div>');
 	$('#dialogAutoCreatedConfirmDiv').html(sContent);

@@ -161,4 +161,37 @@ table.requests .column-info { width:4%; }
 }
 .psempty {
 	display:none;
+}
+.psb-upload {
+	display: inline-block;
+	padding: 10px 50px;
+}
+.psb-file-upload {
+}
+.psb-file-remove {
+}
+#dialogAutoCreatedConfirmDiv {
+	width:400px;
+	max-width:calc(100% - 60px);
+}
+div[aria-describedby="dialogAutoCreatedConfirmDiv"] .ui-dialog-titlebar {
+	display:none;
 } 
+.daccd-buttons {
+	text-align:center;
+	margin:20px; 0px; 10px 0px;
+	vertical-align:top;
+}
+.daccd-yes, .daccd-not {
+	display:inline-block;
+	padding-left:20px;
+	padding-right:20px;
+	vertical-align:top;
+	margin-top:0px;
+}
+.daccd-yes  {
+	margin-right:10px;
+}
+.daccd-yes, .daccd-not {
+	margin-left:10px;
+}
