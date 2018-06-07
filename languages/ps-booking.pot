@@ -84,6 +84,12 @@ msgstr ""
 msgid "Unit capacity"
 msgstr ""
 
+msgid "Unit capacity all"
+msgstr "Total capacity"
+
+msgid "Unit capacity all - desc"
+msgstr "Adults and children combined"
+
 msgid "Short descript"
 msgstr ""
 

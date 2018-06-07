@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PS Booking\n"
 "POT-Creation-Date: 2018-05-03 15:21+0200\n"
-"PO-Revision-Date: 2018-06-06 16:13+0200\n"
+"PO-Revision-Date: 2018-06-07 07:52+0200\n"
 "Last-Translator: \n"
 "Language-Team: Ozsvár István istavn@ozsvar.com\n"
 "Language: hu_HU\n"
@@ -81,6 +81,12 @@ msgstr "Egység neve"
 
 msgid "Unit capacity"
 msgstr "Férőhelyek"
+
+msgid "Unit capacity all"
+msgstr "Teljes férőhely"
+
+msgid "Unit capacity all - desc"
+msgstr "Felnőttek és gyermekek összesen"
 
 msgid "Short descript"
 msgstr "Rövid leírás"
