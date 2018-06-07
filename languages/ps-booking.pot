@@ -303,6 +303,9 @@ msgstr "Return and Refund Policies"
 msgid "YES"
 msgstr "Yes"
 
+msgid "NOT"
+msgstr "No"
+
 msgid "Insertable Variables"
 msgstr "<h3>Insertable Variables</h3>The following variables can be added to the subject, to the lead text and to the footer of the letter:<ul><li><span>##VISITOREMAIL##</span> - visitor's email address,</li><li><span>##VISITORNAME##</span> - visitor's name,</li><li><span>##ORDERNUMBER##</span> - order number of the request,</li><li><span>##ORDERNUMBER1000##</span> - order number of the request plus 1000,</li><li><span>##UNITNAME##</span> - the name of the selected unit</li><li><span>##DATE##</span> - the moment (date) of the request</li></ul>"
 
@@ -329,3 +332,12 @@ msgstr ""
 
 msgid "Submit text can be"
 msgstr "Examples for the text on <i>submit</i> button: \"Submit\", \"Continue\", \"Send\",... etc."
+
+msgid "Picture"
+msgstr ""
+
+msgid "Upload"
+msgstr ""
+
+msgid "Are you sure to remove it?"
+msgstr ""

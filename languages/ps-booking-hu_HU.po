@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PS Booking\n"
 "POT-Creation-Date: 2018-05-03 15:21+0200\n"
-"PO-Revision-Date: 2018-06-07 07:52+0200\n"
+"PO-Revision-Date: 2018-06-07 10:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: Ozsvár István istavn@ozsvar.com\n"
 "Language: hu_HU\n"
@@ -301,6 +301,9 @@ msgstr "Visszatérítési irányelvek"
 msgid "YES"
 msgstr "Igen"
 
+msgid "NOT"
+msgstr "Nem"
+
 msgid "Insertable Variables"
 msgstr "<h3>Beilleszthető változók</h3>A levél tárgyába, a bevezető szövegébe és a láblécébe az alábbi változók illeszthetőek be: <ul><li><span>##VISITOREMAIL##</span> - a látogató email címe,</li><li><span>##VISITORNAME##</span> - a látogató neve,</li><li><span>##ORDERNUMBER##</span> - az ajánlatkérés sorszáma,</li><li><span>##ORDERNUMBER1000##</span> - az ajánlatkérés sorszáma - növelve ezerrel,</li><li><span>##UNITNAME##</span> - a választott egység elnevezése</li><li><span>##DATE##</span> - az ajánlatkérés pillanata (dátuma)</li></ul>"
 
@@ -327,3 +330,12 @@ msgstr "Szöveg a \"submit\" gombon"
 
 msgid "Submit text can be"
 msgstr "Példák a <i>submit</i> gomb szövegére: \"Küldés\", \"Tovább\", \"Mentés\",... stb."
+
+msgid "Picture"
+msgstr "Kép"
+
+msgid "Upload"
+msgstr "Feltöltés"
+
+msgid "Are you sure to remove it?"
+msgstr "Biztosan ki akarod törölni?"
