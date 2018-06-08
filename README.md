@@ -22,6 +22,9 @@ After activating, add PS Booking Form by inserting the shortcode [psBooking] in 
 
 <dl>
 
+	<dt>1.1.0</dt>
+  <dd>Added a possibility to add one picture to each accommodation unit.</dd>
+  
 	<dt>1.0.0</dt>
   <dd>Initial release</dd>
 
