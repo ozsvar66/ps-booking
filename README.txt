@@ -4,7 +4,7 @@ Donate link: http://www.ozsvar.com
 Tags: booking, room requests, admin, plugin
 Requires at least: 3.5
 Tested up to: 4.9.6
-Stable tag: 1.1.0
+Stable tag: 1.1
 
 Booking engine for the small hotels
 
@@ -14,8 +14,8 @@ The plugin provides a simply booking system for small hotel establishments. The 
 
 == Changelog ==
 
-= 1.1.0 =
+= 1.1 =
 * Added a possibility to add one picture to each accommodation unit.
   
-= 1.0.0 =
+= 1.0 =
 * Initial release
