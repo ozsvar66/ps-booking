@@ -3,7 +3,7 @@
  * Plugin Name: PS Booking
  * Plugin URI:  https://github.com/ozsvar66/ps-booking
  * Description: Booking engine for the small hotels
- * Version:     1.0
+ * Version:     1.1
  * Author:      István Ozsvár
  * Author URI:  http://ozsvar.com/
  * License:     MIT
