@@ -1,4 +1,8 @@
 <?php
+
+	$psBooking_pictures = array();
+	$psBooking_phpmailerInitAction = null;
+	
 //--------------------------------------------------------------------------------------------------
 	function psBooking_sendMail($options, $require) {
 	
@@ -36,7 +40,27 @@
 		
 		$message = psBooking_replaceVariables($message, $options, $require);
 		
+		// attach pictures from message (if they exist)
+		global $psBooking_pictures, $psBooking_phpmailerInitAction;
+		$psBooking_pictures = array();
+		preg_match_all("/(<img[^>]+src=[\"\']+)([^\"\']+)([\"\']+[^>]*>)/", $message, $m);
+		foreach($m[2] as $i => $source) {
+			$a = explode("/", $source);
+			$b = explode(".", $a[sizeof($a)-1]);
+			$message = str_replace($m[0][$i], $m[1][$i].'cid:'.$b[0].$m[3][$i], $message);
+			$psBooking_pictures[$source] = $b[0];
+		}
+		add_action('phpmailer_init', $psBooking_phpmailerInitAction=function(&$phpmailer)use($psBooking_pictures){
+			foreach($psBooking_pictures as $source => $cid) {
+				$phpmailer->SMTPKeepAlive = true;
+	    	$phpmailer->AddEmbeddedImage(ABSPATH.$source, $cid);
+	    }
+		});
+		
 		wp_mail($to, $subject, $message, $headers);
+		
+		remove_action('phpmailer_init', $psBooking_phpmailerInitAction);
+		
 	}
 //--------------------------------------------------------------------------------------------------
 	function psBooking_replaceVariables($str, $options, $require) {
