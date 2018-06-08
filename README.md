@@ -13,6 +13,8 @@ Booking engine for the small hotels
 
 The plugin provides a simply booking system for small hotel establishments. The plugin provides a Form that can easily be inserted by shortcode on any page. Provides a list view of completed forms. After a visitor filling out the form, the plugin will send a letter to him instantly. Accommodation units, Form and email can be easily parameterized on the administration interface provided.
 
+This codebase is licensed under the [MIT open source license](http://opensource.org/licenses/MIT). See the ``LICENSE`` file for the complete license.
+
 ## Installation
 
 1. Download the plugin and extract the files
