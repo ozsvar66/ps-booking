@@ -23,7 +23,7 @@ This codebase is licensed under the [MIT open source license](http://opensource.
 
 ## Usage
 
-After activating, add PS Booking Form by inserting the shortcode [psBooking] in any page of your WordPress Pages. 
+After activating, add PS Booking Form by inserting the shortcode ``[psBooking]`` in any page of your WordPress Pages. 
 
 #### Changelog
 
