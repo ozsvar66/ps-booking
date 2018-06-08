@@ -25,7 +25,7 @@ This codebase is licensed under the [MIT open source license](http://opensource.
 
 After activating, add PS Booking Form by inserting the shortcode ``[psBooking]`` in any page of your WordPress Pages. 
 
-#### Changelog
+## Changelog
 
 * 1.1
   * Added a possibility to add one picture to each accommodation unit.
