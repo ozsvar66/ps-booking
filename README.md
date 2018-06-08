@@ -11,8 +11,8 @@ The plugin provides a simply booking system for small hotel establishments. The 
 ## Installation
 
 1. Download the plugin and extract the files
-1. Upload `ps-booking` to your `~/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
+2. Upload `ps-booking` to your `~/wp-content/plugins/` directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
 
 ## Usage
 
@@ -20,12 +20,8 @@ After activating, add PS Booking Form by inserting the shortcode [psBooking] in 
 
 #### Changelog
 
-<dl>
-
-	<dt>1.1.0</dt>
-  <dd>Added a possibility to add one picture to each accommodation unit.</dd>
+= 1.1 =
+* Added a possibility to add one picture to each accommodation unit.
   
-	<dt>1.0.0</dt>
-  <dd>Initial release</dd>
-
-</dl>
+= 1.0 =
+* Initial release
