@@ -4,6 +4,11 @@ This is a WordPress plugin. [Official download in not available yet on wordpress
 
 Booking engine for the small hotels
 
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Changelog](#changelog)
+
 ## Description
 
 The plugin provides a simply booking system for small hotel establishments. The plugin provides a Form that can easily be inserted by shortcode on any page. Provides a list view of completed forms. After a visitor filling out the form, the plugin will send a letter to him instantly. Accommodation units, Form and email can be easily parameterized on the administration interface provided.
