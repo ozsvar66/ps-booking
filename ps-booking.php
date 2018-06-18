@@ -3,13 +3,15 @@
  * Plugin Name: PS Booking
  * Plugin URI:  https://github.com/ozsvar66/ps-booking
  * Description: Booking engine for the small hotels
- * Version:     1.1
+ * Version:     1.2
  * Author:      István Ozsvár
  * Author URI:  http://ozsvar.com/
  * License:     MIT
  * License URI: https://github.com/ozsvar66/ps-booking/blob/master/LICENSE
  */
 
+	error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+	ini_set("display_errors", "1");
 
 	require_once __DIR__."/admin/functions.php";
 
@@ -25,7 +27,14 @@
 	define("PSBOOKING_UNITIMG_WIDTH", $_width);
 	define("PSBOOKING_UNITIMG_HEIGHT", $_height);
 	
-	$psBooking_languages = get_available_languages();
+	$qtranslate = ABSPATH.'wp-content/plugins/qtranslate-x/qtranslate.php';
+	if(file_exists($qtranslate) && ($x=get_option('qtranslate_enabled_languages'))) {
+		// if plugin qTranslate EXISTS and IS ACTIVE
+		foreach($x as $i => $langcode) $psBooking_languages[$i] = $langcode.'_'.strtoupper($langcode);
+	}
+	else {
+		$psBooking_languages = get_available_languages();
+	}
 	
 	// Initialize the plugin and add the menu
 	add_action('admin_menu', 'psBooking_adminCreateSetupMenu');
