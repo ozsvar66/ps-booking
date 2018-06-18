@@ -28,7 +28,7 @@ After activating, add PS Booking Form by inserting the shortcode ``[psBooking]``
 ## Changelog
 
 * 1.2
-  * Added a possibility to connect to the plugin qTranslate and ask the languages that are set there.
+  * Added a possibility to connect to the plugin [qTranslate](https://hu.wordpress.org/plugins/qtranslate-x/) and ask the languages that are set there.
 
 * 1.1
   * Added a possibility to add one picture to each accommodation unit.
