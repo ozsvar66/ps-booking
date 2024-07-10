@@ -1,0 +1,126 @@
+<div class="row p-1">
+                            <form method="POST">
+                                <input class="form-control" value="<?php echo $load_id; ?>" hidden name="load_id" type="text">
+                                <div id="formContainer">
+                                    <table id="sumTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Item Description</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
+                                                <th>Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="SumForm1" class="sumForm">
+                                                <td><input type="text" name="desc[]" readonly value="<?php echo "Line Haul"; ?>" class="form-control"></td>
+                                                <td><input type="number" class="form-control" name="firstBox[]" readonly value="<?php echo $view_load_detail["load_billing_amount"]; ?>" onFocus="startCalc('SumForm1');" onBlur="stopCalc('SumForm1');"></td>
+                                                <td><input type="number" name="secondBox[]" value="1" readonly class="form-control" value="" onFocus="startCalc('SumForm1');" onBlur="stopCalc('SumForm1');"></td>
+                                                <td><input type="number" class="form-control" value="<?php echo $view_load_detail["load_billing_amount"]; ?>" name="thirdBox[]" readonly></td>
+                                                <td class=""><span class="text-primary add-button add-input" onclick="addNewRow()"><i class="fa-solid fa-plus"></i></span></td>
+                                                <!-- <td><button class="add-button close-input"><i class="fa-solid fa-xmark"></i></button></td> -->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3" name="invoice_detail_submit">Submit</button>
+
+                            </form>
+                        </div>
+
+
+
+<script>
+    var intervals = {};
+
+    function startCalc(formId) {
+        intervals[formId] = setInterval(function() {
+            calc(formId);
+        }, 1);
+    }
+
+    function calc(formId) {
+        var row = document.getElementById(formId);
+        var one = parseFloat(row.querySelector('input[name="firstBox[]"]').value) || 0;
+        var two = parseFloat(row.querySelector('input[name="secondBox[]"]').value) || 0;
+        row.querySelector('input[name="thirdBox[]"]').value = one * two;
+    }
+
+    function stopCalc(formId) {
+        clearInterval(intervals[formId]);
+    }
+
+    function addNewRow() {
+        var table = document.getElementById('sumTable').getElementsByTagName('tbody')[0];
+        var rowCount = table.rows.length;
+        var newRow = table.insertRow(rowCount);
+        newRow.className = 'sumForm';
+        newRow.id = 'SumForm' + (rowCount + 1);
+
+        var descriptionCell = newRow.insertCell(0);
+        var priceCell = newRow.insertCell(1);
+        var quantityCell = newRow.insertCell(2);
+        var amountCell = newRow.insertCell(3);
+        var actionCell = newRow.insertCell(4);
+        var removeCell = newRow.insertCell(5);
+
+        var descriptionInput = document.createElement('input');
+        descriptionInput.className = "form-control";
+        descriptionInput.type = 'text';
+        descriptionInput.name = 'desc[]';
+        descriptionInput.value = '';
+        descriptionCell.appendChild(descriptionInput);
+
+        var firstInput = document.createElement('input');
+        firstInput.className = "form-control";
+        firstInput.type = 'number';
+        firstInput.name = 'firstBox[]';
+        firstInput.value = '';
+        firstInput.onfocus = function() {
+            startCalc(newRow.id);
+        };
+        firstInput.onblur = function() {
+            stopCalc(newRow.id);
+        };
+        priceCell.appendChild(firstInput);
+
+        var secondInput = document.createElement('input');
+        secondInput.className = "form-control";
+        secondInput.type = 'number';
+        secondInput.name = 'secondBox[]';
+        secondInput.value = '';
+        secondInput.onfocus = function() {
+            startCalc(newRow.id);
+        };
+        secondInput.onblur = function() {
+            stopCalc(newRow.id);
+        };
+        quantityCell.appendChild(secondInput);
+
+        var resultInput = document.createElement('input');
+        resultInput.className = "form-control";
+        resultInput.type = 'number';
+        resultInput.name = 'thirdBox[]';
+        resultInput.readOnly = true;
+        amountCell.appendChild(resultInput);
+
+        var addButton = document.createElement('button');
+        addButton.innerHTML = '<i class="fa-solid fa-plus"></i>';
+        addButton.className = "add-button add-input";
+        addButton.onclick = addNewRow;
+        //actionCell.appendChild(addButton);
+
+        var remButton = document.createElement('button');
+        remButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        remButton.className = "add-button close-input";
+        remButton.onclick = function() {
+            closeNewRow(newRow.id);
+        };
+        //removeCell.appendChild(remButton);
+    }
+
+    function closeNewRow(rowId) {
+        // var rowToRemove = document.getElementById(rowId);
+        //rowToRemove.parentNode.removeChild(rowToRemove);
+    }
+</script>
